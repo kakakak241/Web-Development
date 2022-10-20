@@ -1,0 +1,93 @@
+*{
+    font-family: "Comic Sans MS", serif;
+}
+
+.contacts{
+    background-image: url("pictures/background2.png");
+    display: inline-block;
+    color: white;
+    margin-left: 21%;
+    padding-left: 30%;
+    padding-right: 19.3%;
+    padding-top: -0%;
+
+}
+
+.contacts h2{
+    font-weight: 400;
+}
+
+.contacts_list{
+    display: inline-block;
+}
+.contacts_list p{
+    color: white;
+}
+
+.infoAboutMeAndExtraInfo{
+    color: #63617a;
+    margin-top: 3%;
+    display: inline-block;
+    margin-left: 0;
+    width: 100%;
+}
+
+.infoAboutMeAndExtraInfo h2{
+    font-weight: 400;
+    margin-left: 48.5%;
+}
+
+.infoAboutMeAndExtraInfo h3{
+    font-weight: 400;
+    margin-left: 49.5%;
+}
+
+.infoAboutMeAndExtraInfo_listAboutMe{
+    display: inline-block;
+    border-style: solid;
+    padding-left: 2%;
+    margin-left: 21%;
+    padding-right: 17.30%;
+
+}
+
+.infoAboutMeAndExtraInfo_listExtraInfo{
+    display: inline-block;
+    color: white;
+    background-image: url("pictures/background1.png");
+    margin-left: 21%;
+    padding-right: 31.4%;
+}
+
+.myPhoto{
+    margin-top: 1%;
+    position: absolute;
+    float: left;
+    margin-left: 25%;
+    height: 35%;
+    width: 15%;
+
+}
+
+.siteHeader{
+    display: inline-block;
+    background-image: url("pictures/background.png");
+    font-size: 300%;
+    color : white;
+    margin-left: 21%;
+    margin-bottom: -0%;
+    font-weight: 300;
+    padding: 3% 25%;
+}
+
+.heroinPNG{
+    height: 50%;
+    width: 50%;
+}
+
+.background{
+    margin-bottom: 3%;
+}
+body{
+    background-color: #c2bebe;
+}
