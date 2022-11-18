@@ -11,6 +11,10 @@
     <title>CV</title>
 </head>
 <body>
+<nav class="menu">
+    <a href="#main__page"> Главная страница</a>
+    <a href="gallery.html#site__header"> Галерея</a>
+</nav>
 <div class="background">
 <header>
     <meta name="viewport" content="width=device-width, user-scalable=no">
@@ -19,7 +23,7 @@
 <main>
     <section>
         <img class="myPhoto" src="pictures/photo.png">
-        <div class="contacts">
+        <div id="main__page" class="contacts">
             <h2>
                 Мои контакты
             </h2>
@@ -171,6 +175,9 @@
         <div>⏸</div>
     </div>
 </main>
+    <div id="loading_time"></div>
+    <script src="loadSite.js"></script>
+    <script src="navigate_links.js"></script>
 </div>
 </body>
 </html>

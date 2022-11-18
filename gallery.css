@@ -1,0 +1,208 @@
+html{
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(pictures/space.jpg);
+}
+
+*,
+*::after,
+*::before {
+    font-family: "Comic Sans MS", serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+.menu a{
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.navigates{
+    scroll-margin-top: 160px;
+    font-size: 30px;
+}
+
+.clearfix:before, .clearfix:after {
+    content: '';
+    display: table;
+}
+.clearfix:after {
+    clear: both;
+}
+.siteHeader{
+    text-align: center;
+    color: white;
+}
+.box__for__images{
+    width: 80%;
+    margin: 2rem auto;
+}
+.images {
+    overflow: hidden;
+    margin: 0;
+    width: 100%;
+    list-style: none;
+    text-align: center;
+}
+.images figure {
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+    overflow: hidden;
+    background: #527c82;
+    text-align: center;
+    cursor: pointer;
+}
+.images figure img {
+    position: relative;
+    display: block;
+    min-height: 100%;
+    opacity: 0.8;
+}
+.images figure figcaption {
+    padding: 2em;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 3em;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+.images figure figcaption::before,
+.images figure figcaption::after {
+    pointer-events: none;
+}
+.images figure figcaption{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.images figure h3 {
+    word-spacing: -0.15em;
+    font-weight: 300;
+}
+.images figure h3 span {
+    font-weight: 800;
+}
+.images figure h3,
+.images figure p {
+    margin: 0;
+}
+.images figure p {
+    letter-spacing: 1px;
+    font-size: 68.5%;
+}
+
+.images {
+    margin-top: 5%;
+    display: grid;
+    grid-template-columns: repeat(10, 0.5fr);
+    grid-template-rows: repeat(10, 10vm);
+    grid-gap: 2%;
+    list-style: none;
+    text-align: center;
+    padding: 0;
+}
+
+.gallery__photo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.gallery__item--1 {
+    grid-column-start: 1;
+    grid-column-end: 6;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+.gallery__item--2 {
+    grid-column-start: 6;
+    grid-column-end: 11;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+.gallery__item--3 {
+    grid-column-start: 1;
+    grid-column-end: 6;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+.gallery__item--4 {
+    grid-column-start: 6;
+    grid-column-end: 11;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+.gallery__item--5 {
+    grid-column-start: 1;
+    grid-column-end: 6;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+
+
+/* Эффект при наведении */
+figure.gallery__item {
+    background: #527c82;
+}
+figure.gallery__item img {
+    width: -webkit-calc(100% + 20px);
+    width: calc(100% + 20px);
+    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+    transition: opacity 0.35s, transform 0.35s;
+    transform: scale(1.1);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+figure.gallery__item:hover img {
+    opacity: 0.4;
+    -webkit-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
+}
+figure.gallery__item figcaption {
+    text-align: left;
+}
+figure.gallery__item h3 {
+    position: relative;
+    overflow: hidden;
+    padding: 0.5em 0;
+}
+figure.gallery__item h3::after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: #fff;
+    content: '';
+    -webkit-transition: -webkit-transform 0.35s;
+    transition: transform 0.35s;
+    -webkit-transform: translate3d(-100%,0,0);
+    transform: translate3d(-100%,0,0);
+}
+figure.gallery__item:hover h3::after {
+    -webkit-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
+}
+figure.gallery__item p {
+    padding: 1em 0;
+    opacity: 0;
+    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+    transition: opacity 0.35s, transform 0.35s;
+    -webkit-transform: translate3d(100%,0,0);
+    transform: translate3d(100%,0,0);
+}
+figure.gallery__item:hover p {
+    opacity: 1;
+    -webkit-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
+}
