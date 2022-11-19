@@ -11,6 +11,10 @@ window.addEventListener("load", function () {
             currentElement = currentElement[1]
         }
 
+        /*
+        Оператор == сравнивает на равенство, а вот === — на идентичность.
+        Для массивов и объектов оба оператора работают одинаково, сравнивая на идентичность
+        */
         links.forEach((item) => {
             console.log('#' + currentElement === item.hash)
             '#' + currentElement === item.hash ? item.classList.add("navigates") : item.classList.remove("navigates")
