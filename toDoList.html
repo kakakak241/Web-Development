@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<!-- Язык -->
+<html lang="ru">
+<!-- Служебная информация -->
+<head>
+  <!-- Сторонние файлы -->
+  <link href="toDoList.css" rel="stylesheet">
+  <!-- Служебная информация -->
+  <meta charset="UTF-8">
+  <!-- Название страницы -->
+  <title>TODO List</title>
+</head>
+<body>
+<nav class="menu">
+  <a href="index.html#main__page"> Главная страница</a>
+  <a href="gallery.html#site__header"> Галерея</a>
+  <a href="#my__container"> Список дел</a>
+</nav>
+<header>
+  <div class="my__container" id="my__container">
+    <h1 id="site__header" class="siteHeader">ToDo List</h1>
+
+    <form class="my__todo-form">
+      <input class="my__todo-input" type="text" placeholder="Add...">
+      <button class="my__add-button" type="submit">+</button>
+    </form>
+
+    <ul class="my__todo-items"></ul>
+  </div>
+</header>
+<script src="navigate_links.js"></script>
+<script src="toDoList.js"></script>
+</body>
+</html>
