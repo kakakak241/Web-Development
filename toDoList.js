@@ -1,4 +1,3 @@
-
 // select everything
 // select the todo-form
 // Область видимости переменных var ограничивается либо функцией, либо, если переменная глобальная, то скриптом.
@@ -36,7 +35,7 @@ function addTodo(item) {
     }
 }
 // function to render given toDoList to screen
-function rendertoDoList(toDoList) {
+function renderToDoList(toDoList) {
     // clear everything inside <ul> with class=todo-items
     todoItemsList.innerHTML = '';
 // run through each item inside toDoList
@@ -70,10 +69,9 @@ function rendertoDoList(toDoList) {
 }
 // function to add toDoList to local storage
 function addToLocalStorage(toDoList) {
-    // conver the array to string then store it.
     localStorage.setItem('toDoList', JSON.stringify(toDoList));
     // render them to screen
-    rendertoDoList(toDoList);
+    renderToDoList(toDoList);
 }
 // function helps to get everything from local storage
 function getFromLocalStorage() {
@@ -82,7 +80,7 @@ function getFromLocalStorage() {
     if (reference) {
         // converts back to array and store it in toDoList array
         toDoList = JSON.parse(reference);
-        rendertoDoList(toDoList);
+        renderToDoList(toDoList);
     }
 }
 // toggle the value to completed and not completed
