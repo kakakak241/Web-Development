@@ -46,6 +46,9 @@ ul {
 .my__todo-form {
     margin: 40px 0;
 }
+#photos p{
+    color: white;
+}
 .my__todo-input {
     width: 250px;
     border: none;
@@ -104,3 +107,61 @@ ul {
 }
 /* todo-items style ends */
 /* container style ends */
+.preLoad, .fa {
+    margin: 2vh;
+    text-align: center;
+}
+
+#photos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 2vh;
+    padding: 1.5vh;
+}
+
+#photos p {
+    color: white;
+    font-size: 3.5vh;
+    text-align: center;
+}
+
+
+.message_image{
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.thumbnailUrl_of_photo {
+    width: 60px;
+    height: 60px;
+    padding-left: 5%;
+    padding-bottom: 2%;
+    float: right;
+    /*margin-right: 15px;*/
+    /*margin-top: 20px;*/
+}
+
+.title_in_album {
+    font-weight: 300;
+    margin-bottom: 5px;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: justify;
+    width: 600px;
+}
+
+.title_name_in_album{
+    color: antiquewhite;
+    font-size: 200%;
+    margin-top: 35px;
+}
+.photo_with_title {
+    display:block;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: 0.7rem;
+    margin-bottom: 5%;
+    text-align: center;
+}
